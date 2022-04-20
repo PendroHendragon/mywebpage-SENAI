@@ -5,7 +5,8 @@ import '../node_modules/bulma/css/bulma.min.css'
 import Nav from '../src/components/nav'
 import Footer from '../src/components/footer'
 import Header from '../src/components/header'
-import Tabs from '../src/components/toggle-tab'
+import Tabs from '../src/components/toggle-tab';
+import Cobrinha from '../src/components/cobrinha'
 
 export default function Home() {
 
@@ -21,6 +22,8 @@ export default function Home() {
       <Header />
 
       <Tabs />
+      <br />
+      <Cobrinha />
 
       <Footer className={styles.footer} />
       
