@@ -3,7 +3,7 @@
 }
 
 .buttonGroup{
-  width: 35%;
+  width: 30%;
   border: 1px solid black;
   border-radius: 15px;
   display: flex;
@@ -42,7 +42,14 @@
 
 
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
+
+  .buttonGroup{
+    width: 50%;
+  }
+  
+}
+@media only screen and (max-width: 720px) {
 
   .buttonGroup{
     width: 100%;

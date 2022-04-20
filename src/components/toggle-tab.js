@@ -3,7 +3,8 @@ import App from '../../styles/app.module.css';
 import Image from 'next/image';
 import Figma from '../img/figma-action-4.png';
 import Adobe from '../img/xd-action-1.png';
-
+import Sketch from '../img/sketch-action-2.png';
+import Chrome from '../img/chrome-action-1.png';
 
 
 function Tabs(){
@@ -12,19 +13,20 @@ function Tabs(){
         backgroundColor: "transparent",
         zIndex: "0",
         border: "0px",
-        padding: "8px 16px",
+        padding: "8px 12px",
         borderRadius: "15px",
-        transition: "all 0.5s"
+        transition: "all 0.2s"
         
     }
 
     const buttonActive = {
         backgroundColor: "blue",
+        color: "white",
         zIndex: "10",
         border: "0px",
-        padding: "8px 16px",
+        padding: "8px 32px",
         borderRadius: "15px",
-        transition: "all 0.5s"
+        transition: "all 1s"
 
     }
 
@@ -81,10 +83,24 @@ function Tabs(){
                     </div>
                     
                 </div>
+                <div>
+                    <div style={toggleState == 3 ? contentActive : content} className="">
+                        <Image src={Sketch} width="940" height="590" />
+                    </div>
+                    
+                </div>
+                <div>
+                    <div style={toggleState == 4 ? contentActive : content} className="">
+                        <Image src={Chrome} width="940" height="590" />
+                    </div>
+                    
+                </div>
             </div>
             <div className={App.buttonGroup}>
                 <button style={toggleState == 1 ? buttonActive : button} onClick={() => toggleTab(1)} >Figma</button>
                 <button style={toggleState == 2 ? buttonActive : button} onClick={() => toggleTab(2)}>Adobe</button>
+                <button style={toggleState == 3 ? buttonActive : button} onClick={() => toggleTab(3)}>Pixel</button>
+                <button style={toggleState == 4 ? buttonActive : button} onClick={() => toggleTab(4)}>Chrome</button>
             </div>
             
         </div>
