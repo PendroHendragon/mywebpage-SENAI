@@ -36,14 +36,23 @@ export default function Nav() {
             <div id="navbarBasicExample" className={clicked === true ? "navbar-menu is-active" : "navbar-menu"} style={navColor}>
                 <div className="navbar-start">
                     <a className="navbar-item">
-                        Home
+                        PRICING
                     </a>
 
                     <a className="navbar-item">
-                        Documentation
+                        BLOG
                     </a>
                     <a className="navbar-item">
-                        More
+                        COMMUNITY
+                    </a>
+                    <a className="navbar-item">
+                        LIBRARY
+                    </a>
+                    <a className="navbar-item">
+                        SUPPORT
+                    </a>
+                    <a className="navbar-item">
+                        MAC BETA
                     </a>
 
 

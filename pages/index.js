@@ -6,7 +6,10 @@ import Nav from '../src/components/nav'
 import Footer from '../src/components/footer'
 import Header from '../src/components/header'
 import Tabs from '../src/components/toggle-tab';
-import Cobrinha from '../src/components/cobrinha'
+import Cobrinha from '../src/components/cobrinha';
+import Accessibility from '../src/components/accessibility';
+import Features from '../src/components/features';
+import Customers from '../src/components/customers';
 
 export default function Home() {
 
@@ -24,8 +27,18 @@ export default function Home() {
       <Tabs />
       <br />
       <Cobrinha />
+      <br />
+      <Accessibility />
+      <br />
+      <Cobrinha />
+      <br />
+      <Features />
+      <br />
+      <Cobrinha />
+      <br />
+      <Customers />
 
-      <Footer className={styles.footer} />
+      <Footer />
       
 
 
