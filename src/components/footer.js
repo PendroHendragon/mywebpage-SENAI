@@ -1,7 +1,7 @@
 import Line from "./line";
 import Heart from "./heart";
 import Logo from "./svg-logo";
-export default function Footer({ className }) {
+export default function Footer() {
 
     const flex = {
         display: "flex",
@@ -14,7 +14,7 @@ export default function Footer({ className }) {
     }
 
     return (
-        <footer className={className}>
+        <footer >
             <Line />
             <br />
             <br />

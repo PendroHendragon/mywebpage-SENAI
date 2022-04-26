@@ -1,5 +1,4 @@
-import Red from "./svg-red";
-
+import Row from "./styles/styled"
 
 export default function Accessibility() {
 
@@ -23,7 +22,7 @@ export default function Accessibility() {
 
     }
     const p = {
-        width: "45%",
+        width: "65%",
         display: "flex",
         margin: "auto"
     }
@@ -52,14 +51,14 @@ export default function Accessibility() {
                 </div>
                 <div style={p}>
                     <p>While Stark today lives in your design and development software,
-                        it supports you and your team through the entire product lifecycle. And, here’s how.</p>
+                        it supports you and your team through the entire product lifecycle. And, here's how.</p>
 
                 </div>
             </div>
             <br />
             <br />
-            <div style={row}>
-                <div style={card}>
+            <Row>
+                <div className="cardw">
                     <div>
                         <h4>FROM IDEA TO PRODUCTION</h4>
                         <h3 style={title2}>Work with accessibility in mind</h3>
@@ -70,7 +69,7 @@ export default function Accessibility() {
                     </div>
 
                 </div>
-                <div style={card}>
+                <div className="cardw">
                     <div>
                         <h4>RAPID RETROFITTING</h4>
                         <h3 style={title2}>Update your existing design system</h3>
@@ -81,10 +80,10 @@ export default function Accessibility() {
                     </div>
 
                 </div>
-            </div>
+            </Row>
             <br />
-            <div style={row}>
-                <div style={card}>
+            <Row>
+                <div className="cardw">
                     <div>
                         <h4>FROM IDEA TO PRODUCTION</h4>
                         <h3 style={title2}>Work with accessibility in mind</h3>
@@ -95,7 +94,7 @@ export default function Accessibility() {
                     </div>
 
                 </div>
-                <div style={card}>
+                <div className="cardw">
                     <div>
                         <h4>RAPID RETROFITTING</h4>
                         <h3 style={title2}>Update your existing design system</h3>
@@ -107,7 +106,7 @@ export default function Accessibility() {
 
                 </div>
 
-            </div>
+            </Row>
         </div>
     );
 }

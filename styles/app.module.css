@@ -10,17 +10,6 @@
   margin: auto;
 }
 
-@keyframes aparece {
-  0%{opacity: 0;display: none;}
-  100%{opacity: 1;display: block;}
-  
-}
-
-@keyframes desaparece {
-  0%{opacity: 1; display: block;}
-  100%{opacity: 0; display: none;}
-  
-}
 
 .tabsTitle{
   font-size: 32px;
@@ -31,13 +20,15 @@
 }
 
 .aparece{
-  display: block;
-  animation: aparece 1s;
+  transition: "width 1.5s, visibility 1.5s ,display 1.5s ,opacity 1.5s linear"
 }
 
 .desaparece{
-  display: none;
-  animation: desaparece 1s;
+
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: "width 1.5s, visibility 1.5s ,display 1.5s ,opacity 1.5s linear"
 }
 
 

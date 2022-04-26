@@ -31,16 +31,19 @@ function Tabs(){
     }
 
     const content = {
-        display:"none",
         oapcity: "0",
-        transition: "opacity 1.5s ease"
+        width:"0",
+        visibility: "hidden",
+        transition: "width 1.5s, visibility 1.5s ,display 1.5s ,opacity 1.5s linear"
 
     }
 
     const contentActive = {
-        display: "block",
+
         oapcity: "1",
-        transition: "opacity 1.5s ease"
+        visibility: "visible",
+        width: "auto",
+        transition: "width 1.5s, visibility 1.5s ,display 1.5s ,opacity 1.5s linear"
 
     }
     const buttonGroup = {
@@ -73,24 +76,24 @@ function Tabs(){
             <br />
             <div style={contentGroup}>
                 <div>
-                    <div style={toggleState == 1 ? contentActive : content} className="">
+                    <div className={toggleState == 1 ? App.aparece: App.desaparece} >
                         <Image src={Figma}  width="940" height="590" />
                     </div>
                 </div>
                 <div>
-                    <div style={toggleState == 2 ? contentActive : content} className="">
+                    <div className={toggleState == 2 ? App.aparece: App.desaparece}>
                         <Image src={Adobe} width="940" height="590" />
                     </div>
                     
                 </div>
                 <div>
-                    <div style={toggleState == 3 ? contentActive : content} className="">
+                    <div className={toggleState == 3 ? App.aparece: App.desaparece}>
                         <Image src={Sketch} width="940" height="590" />
                     </div>
                     
                 </div>
                 <div>
-                    <div style={toggleState == 4 ? contentActive : content} className="">
+                    <div className={toggleState == 4 ? App.aparece: App.desaparece}>
                         <Image src={Chrome} width="940" height="590" />
                     </div>
                     

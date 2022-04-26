@@ -5,6 +5,7 @@ import Image2 from '../../src/img/image';
 import header from '../../styles/header.module.css'
 
 
+
 export default function Header() {
 
     const styles = {
